@@ -1,0 +1,9 @@
+overwrite: true
+schema: "https://lenient-wolf-89.hasura.app/v1/graphql"
+documents: "queries/**/*.ts"
+generates:
+  types/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
