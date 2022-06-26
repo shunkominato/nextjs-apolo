@@ -22,7 +22,7 @@ export const GET_USERS_LOCAL = gql`
 
 export const GET_USERSIDS = gql`
   query GetUserIds {
-    users(order_by: {create_at: desc}) @client {
+    users(order_by: {create_at: desc}) {
       id
     }
   }
