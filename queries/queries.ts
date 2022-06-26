@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const GET_USERS = gql`
   query GetUsers {
-    users(order_by: {create_at: desc}) {
+    users(order_by: { create_at: desc }) {
       id
       name
       create_at
@@ -12,7 +12,7 @@ export const GET_USERS = gql`
 
 export const GET_USERS_LOCAL = gql`
   query GetUsers {
-    users(order_by: {create_at: desc}) @client {
+    users(order_by: { create_at: desc }) @client {
       id
       name
       create_at
